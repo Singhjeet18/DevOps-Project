@@ -11,7 +11,7 @@ COPY  app.py .
 RUN pip install --no-cache-dir pywebio requests
 
 # Expose the port PyWebIO runs on
-EXPOSE 8000
+EXPOSE 8080
 
 # Define the command to run the application
 CMD ["python", "app.py"]
