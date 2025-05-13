@@ -1,6 +1,6 @@
 image:
     repository: singhjeet18/devops-project
-    tag: "778e86e"
+    tag: "9d0d603"
     pullPolicy: IfNotPresent
 service:
     type: ClusterIP
