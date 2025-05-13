@@ -1,6 +1,6 @@
 ---
 
-name: devops-project01
+name: devops-project
 
 on:
   push:
