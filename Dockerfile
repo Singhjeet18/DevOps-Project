@@ -5,13 +5,13 @@ FROM python:3.9
 WORKDIR /app
 
 # Copy the application files into the container
-COPY . /app
+COPY  app.py .
 
 # Install the required dependencies
 RUN pip install --no-cache-dir pywebio requests
 
 # Expose the port PyWebIO runs on
-EXPOSE 80
+EXPOSE 8000
 
 # Define the command to run the application
-CMD ["python", "aap.py"]
+CMD ["python", "app.py"]
