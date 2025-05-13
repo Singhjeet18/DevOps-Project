@@ -1,11 +1,17 @@
-FROM python:3.9-slim
+# Use an official Python image as the base
+FROM python:3.9
 
+# Set the working directory in the container
 WORKDIR /app
 
-COPY app.py .
+# Copy the application files into the container
+COPY . /app
 
-RUN pip install flask
+# Install the required dependencies
+RUN pip install --no-cache-dir pywebio requests
 
-EXPOSE  8080
+# Expose the port PyWebIO runs on
+EXPOSE 80
 
-CMD ["python", "app.py"]
+# Define the command to run the application
+CMD ["python", "your_script.py"]
