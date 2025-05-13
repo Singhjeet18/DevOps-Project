@@ -11,7 +11,7 @@ provider "minikube" {
 }
 resource "minikube_cluster" "minikube_docker" {
     driver = "docker"
-    cluster_name = "complete-DevOps-project"
+    cluster_name = "devops-project"
     addons = [
         "defult-storageclass",
         "storage-provisioner"
