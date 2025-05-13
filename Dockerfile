@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir pywebio requests
 EXPOSE 80
 
 # Define the command to run the application
-CMD ["python", "your_script.py"]
+CMD ["python", "aap.py"]
