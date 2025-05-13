@@ -1,6 +1,6 @@
 ---
 
-name: devops-project
+name: devops-project01
 
 on:
   push:
@@ -18,14 +18,14 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t singhjeet18/devops-project:${{ env.SHORT_SHA }} .
+          docker build -t singhjeet18/devops-project01:${{ env.SHORT_SHA }} .
 
       - name: Login to Docker Hub
         run: |
           echo "${{ secrets.DOCKER_HUB_TOKEN }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
       - name: Push to DockerHub
         run: |
-          docker push singhjeet18/devops-project:${{ env.SHORT_SHA }}
+          docker push singhjeet18/devops-project01:${{ env.SHORT_SHA }}
       - name: Conguar Git Author
         run: |
           git config --local user.name "singhjeet18"
