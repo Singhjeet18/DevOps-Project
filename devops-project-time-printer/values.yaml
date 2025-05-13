@@ -1,6 +1,6 @@
 image:
     repository: singhjeet18/devops-project
-    tag: "${SHORT_SHA}"
+    tag: "5956297"
     pullPolicy: IfNotPresent
 service:
     type: ClusterIP
